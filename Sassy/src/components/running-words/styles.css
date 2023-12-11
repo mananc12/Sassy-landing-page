@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans&family=Montserrat&family=Plaster&display=swap');
+.run {
+    margin: 0;
+    padding: 0;
+  }
+  
+  .run {
+    font-family: "Plaster", sans-serif;
+    font-style: normal;
+    -webkit-font-smoothing: antialiased;
+  }
+  
+ 
+  
+  .run {
+    width: 99vw;
+    margin-top: 20px;
+    padding-top: 5vh;
+    padding-bottom: 5vh;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .parallax {
+    overflow: hidden;
+    letter-spacing: -2px;
+    line-height: 0.9;
+    margin: 0;
+    white-space: nowrap;
+    display: flex;
+    flex-wrap: nowrap;
+  }
+  
+  .parallax .scroller {
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 64px;
+    display: flex;
+    white-space: nowrap;
+    display: flex;
+    flex-wrap: nowrap;
+  }
+  
+  .parallax span {
+    display: block;
+    margin-right: 30px;
+  }
+
+  @media (max-width: 450px) {
+    .parallax .scroller {
+        font-weight: 500;
+        font-size: 50px;
+       
+      }
+  }
+  
