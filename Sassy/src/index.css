@@ -1,0 +1,127 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.item1 { grid-area: a; }
+.item2 { grid-area: b; }
+.item3 { grid-area: c; }
+.item4 { grid-area: d; }
+.item5 { grid-area: e; }
+.item6 { grid-area: f; }
+.item7 { grid-area: g; }
+.item8 { grid-area: h; }
+.item9 { grid-area: i; }
+.item10 { grid-area: j; }
+.item11 { grid-area: k; }
+.item12 { grid-area: l; }
+.item13 { grid-area: m; }
+.item14 { grid-area: n; }
+.item15 { grid-area: o; }
+.item16 { grid-area: p; }
+.item17 { grid-area: q; }
+.item18 { grid-area: r; }
+.item19 { grid-area: s; }
+.item20 { grid-area: t; }
+
+.grid-container {
+  grid-template-areas:
+    'a a b b b c '
+    'd d e e e f'
+    'g g h h i j'
+    'k k k l m m'
+    'n n o p p p'
+    'q r r r s t';
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url("/public/bg.jpg");
+  
+}
+.grid-container div{
+    border: solid;
+    border-width: 8px;
+    border-color: white;
+}
+
+#pricing .tab-container{
+  padding: 80px;
+  background-image: url('/public/price.jpg');
+  background-position: center;
+  background-size: cover; 
+  background-repeat: no-repeat;
+}
+#home .wave{
+  background: url('/public/wave.png');
+  animation: animate 10s linear infinite;
+}
+#home .wave:before{
+  content: '';
+  width:100%;
+  height: 143px;
+  background: url('/public/wave.png');
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0.4;
+  animation: animate-reverse 10s linear infinite;
+}
+@keyframes animate {
+  0%{
+    background-position: 0;
+  }
+  100%{
+    background-position: 1360px;
+  }
+}
+@keyframes animate-reverse {
+  0%{
+    background-position: 1360px;
+  }
+  100%{
+    background-position: 0;
+  }
+}
+
+
+/* ----------------------------------------------------------------- */
+
+/* Using CSS Transition */
+@keyframes slideInAnimation {
+  from {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+.slide-in {
+  animation: slideInAnimation 0.5s ease-in-out;
+}
+
+
+/* ---------------------------------------------------------------------- */
+
+/* Using CSS Transition */
+/* .pop-in {
+  transform: scale(0);
+  transition: transform 0.5s ease-in-out;
+} */
+
+/* .pop-in:hover {
+  transform: scale(1);
+} */
+
+/* Using CSS Animation */
+@keyframes popInAnimation {
+  from {
+    transform: scale(0);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+
+.pop-in {
+  animation: popInAnimation 0.5s ease-in-out;
+}
+
